@@ -18,7 +18,7 @@ server.listen(port, hostname, () => {
     console.log(`Server running at http://${hostname}:${port}`)
 });
 
-const rootController = require('./routes/index');
+const root`Cont`roller = require('./routes/index');
 const rangersController = require('./routes/rangers');
 
 
