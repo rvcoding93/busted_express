@@ -5,8 +5,8 @@ const http = require('http')
 const hostname = '127.0.0.1';
 const port = 3333;
 
-const express = require('express'),
-    es6Renderer = require('express-es6-template-engine');
+const express = require('express');
+const es6Renderer = require('express-es6-template-engine');
 
 const app = express();
 
@@ -19,6 +19,8 @@ const server = http.createServer(app);
 server.listen(port, hostname, () => {
     console.log(`Server running at http://${hostname}:${port}`)
 });
+
+app.get
 
 const rootController = require('./routes/index');
 const rangersController = require('./routes/rangers');

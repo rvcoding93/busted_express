@@ -32,5 +32,4 @@ router.get('/:slug', (req, res) => {
     } else {
         res.status(404).send(`No Ranger found that matches slug, ${slug}`);
     }
-
 });
