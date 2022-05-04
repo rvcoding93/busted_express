@@ -1,6 +1,7 @@
 'use strict';
 
 const http = require('http')
+//const db = require('./model/db')
 
 const hostname = '127.0.0.1';
 const port = 3333;
@@ -10,9 +11,8 @@ const express = require('express'),
 
 const app = express();
 
-
 app.engine('html', es6Renderer);
-app.set('views', './views');
+app.set('views', 'templates');
 app.set('view engine', 'html');
 
 const server = http.createServer(app);
