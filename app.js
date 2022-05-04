@@ -20,7 +20,7 @@ server.listen(port, hostname, () => {
     console.log(`Server running at http://${hostname}:${port}`)
 });
 
-app.get
+app.use(rootController)
 
 const rootController = require('./routes/index');
 const rangersController = require('./routes/rangers');
