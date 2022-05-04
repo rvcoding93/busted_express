@@ -1,6 +1,7 @@
 'use strict';
 
 const http = require('http')
+
 const hostname = '127.0.0.1';
 const port = 3333;
 
@@ -8,6 +9,7 @@ const express = require('express'),
     es6Renderer = require('express-es6-template-engine');
 
 const app = express();
+
 
 app.engine('html', es6Renderer);
 app.set('views', './views');
@@ -21,6 +23,8 @@ server.listen(port, hostname, () => {
 
 const rootController = require('./routes/index');
 const rangersController = require('./routes/rangers');
+const router = express.Router();
+
 
 
 app.use('/rangers', rangersController);
