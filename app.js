@@ -14,7 +14,7 @@ app.set('view engine', 'html');
 
 const server = http.createServer(app);
 
-server.listen(PORT, HOSTNAME, () => {
+server.listen(port, hostname, () => {
     console.log(`Server running at http://${hostname}:${port}`)
 });
 
